@@ -1,2 +1,31 @@
-# DELL-Inspiron-5458
-DELL-Inspiron-5458 Hackintosh
+# DELL-Inspiron-5458 Hackintosh EFI
+## 本子配置
+
+| 规格     | 详细信息                                     |
+| -------- | ---------------------------------------- |
+| 电脑型号 | DELL-inspiron-5458             |
+| 处理器   | 英特尔 酷睿 i3-5005U处理器             |
+| 内存     | 8GB  DDR3L 1600MHz                 |
+| 硬盘     | 金士顿 SATA3固态硬盘 SA400S37240G 240GB                  |
+| 集成显卡 | 英特尔 HD 图形5500                            |
+| 声卡     | 瑞昱 ALC55                     |
+| 网卡     | 博通 DW1560A                             |
+
+## 哪些不能正常工作
+- 英特尔无线网卡
+  - 购买USB网卡或者支持的内置网卡.  
+## 哪些能够正常工作  
+- 显卡
+  - 注入ID：0x16260006驱动。
+- 有线网卡
+  - 使用[RealtekRTL8100](EFI/CLOVER/kexts/Other/RealtekRTL8100.kext)驱动
+- 无线网卡
+  - 自带的无线网卡AC3160无解，已经更换为DW1560A.
+
+### 我的触控板升级系统后无法使用。
+
+你需要在每次更新系统后重建缓存。运行 `Kext Utility.app` 或者在 `终端.app` 输入 `sudo kextcache -i /`，然后重启。  
+
+
+## 更新日志
+ V1.0  
