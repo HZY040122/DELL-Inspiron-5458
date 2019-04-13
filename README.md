@@ -18,7 +18,7 @@
 - 显卡
   - 注入ID：0x16260006驱动。
 - 有线网卡
-  - 使用[RealtekRTL8100](EFI/CLOVER/kexts/Other/RealtekRTL8100.kext)驱动
+  - 使用RealtekRTL8100驱动
 - 无线网卡
   - 自带的无线网卡英特尔AC3160无解，已经更换为DW1560A.
 
